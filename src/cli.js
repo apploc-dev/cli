@@ -145,7 +145,7 @@ export async function cli(args) {
                 chalk.bold('apploc update') +
                 ' to check the validity of the config.'
         );
-    } else {
+    } else if (options.command == 'update') {
         const configPath = findConfig(workingDirectory);
 
         if (!configPath) {
@@ -221,6 +221,11 @@ export async function cli(args) {
 
             logError(error);
             process.exitCode = 1;
+            return;
         }
+    } else {
+        logError('unknown command: ' + options.command);
+        process.exitCode = 1;
+        return;
     }
 }

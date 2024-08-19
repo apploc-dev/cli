@@ -1,6 +1,6 @@
 {
     "name": "@apploc/cli",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "A command-line tool for managing and updating localization files in your applications.",
     "main": "src/index.js",
     "bin": {
