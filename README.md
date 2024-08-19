@@ -4,9 +4,7 @@ AppLoc CLI is a command-line tool designed to help you manage localization files
 
 ## Installation
 
-To install the AppLoc CLI, you can use npm:
-
-```sh
+```bash
 npm install -g @apploc/cli
 ```
 
